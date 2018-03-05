@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Proxima Nova Light.otf">
+            <string>ProximaNova-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GoogleSignInCell" id="jVf-wu-XEb" customClass="GoogleSignInCell" customModule="Scene" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="145"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBg-gb-0Fc">
+                        <rect key="frame" x="0.0" y="0.0" width="371" height="145"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="mec-5x-3Yx">
+                                <rect key="frame" x="114" y="-7.5" width="143" height="131"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoogleSignInLogo" translatesAutoresizingMaskIntoConstraints="NO" id="nIG-WE-8da">
+                                        <rect key="frame" x="13.5" y="0.0" width="116" height="116"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nIG-WE-8da" secondAttribute="height" multiplier="1:1" id="D2j-eg-02h"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Google" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELg-Yj-FsX">
+                                        <rect key="frame" x="0.0" y="96" width="143" height="35"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="17"/>
+                                        <color key="textColor" red="0.60392156860000001" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ELg-Yj-FsX" firstAttribute="height" secondItem="nIG-WE-8da" secondAttribute="height" multiplier="0.3" id="yJF-lF-ZMd"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mec-5x-3Yx" firstAttribute="height" secondItem="bBg-gb-0Fc" secondAttribute="height" multiplier="0.9" id="SoT-BC-pmp"/>
+                            <constraint firstItem="mec-5x-3Yx" firstAttribute="centerY" secondItem="bBg-gb-0Fc" secondAttribute="centerY" multiplier="0.8" id="W90-Ew-zb5"/>
+                            <constraint firstItem="mec-5x-3Yx" firstAttribute="centerX" secondItem="bBg-gb-0Fc" secondAttribute="centerX" id="umY-eK-FIM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bBg-gb-0Fc" secondAttribute="trailing" id="1II-XC-BiZ"/>
+                <constraint firstAttribute="bottom" secondItem="bBg-gb-0Fc" secondAttribute="bottom" id="Tzj-E0-MZ4"/>
+                <constraint firstItem="bBg-gb-0Fc" firstAttribute="leading" secondItem="jVf-wu-XEb" secondAttribute="leading" id="hLZ-Ue-SnG"/>
+                <constraint firstItem="bBg-gb-0Fc" firstAttribute="top" secondItem="jVf-wu-XEb" secondAttribute="top" id="pqw-Ww-m63"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="GCB-dm-bbz"/>
+            <size key="customSize" width="588" height="185"/>
+            <connections>
+                <outlet property="containerView" destination="bBg-gb-0Fc" id="LLO-nx-3i3"/>
+            </connections>
+            <point key="canvasLocation" x="112.5" y="39.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="GoogleSignInLogo" width="961" height="900"/>
+    </resources>
+</document>

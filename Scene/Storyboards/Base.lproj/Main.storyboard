@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="POF-Te-VsA">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Events View Controller-->
+        <scene sceneID="kYA-QV-8i4">
+            <objects>
+                <viewController storyboardIdentifier="EventsViewController" id="POF-Te-VsA" customClass="EventsViewController" customModule="Scene" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="7ap-JZ-PEw" customClass="EventsMainView" customModule="Scene" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vIl-Ao-9kW" customClass="EventsCollectionView" customModule="Scene" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="110.33333333333331" width="414" height="625.66666666666674"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ksx-MK-ckM">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="POF-Te-VsA" id="gBC-Ir-Ska"/>
+                                    <outlet property="delegate" destination="POF-Te-VsA" id="VFD-7A-lS8"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvK-R2-oPE">
+                                <rect key="frame" x="20" y="30" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.95597785710000005" green="0.96544295550000003" blue="0.96544295550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kAi-mR-QGG"/>
+                                    <constraint firstAttribute="width" constant="50" id="lsz-lh-kHk"/>
+                                </constraints>
+                                <state key="normal" title="Menu"/>
+                                <connections>
+                                    <action selector="menuButtonTapped:" destination="POF-Te-VsA" eventType="touchUpInside" id="Jiw-aq-HaW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gvK-R2-oPE" firstAttribute="leading" secondItem="ipC-OC-sCY" secondAttribute="leading" constant="20" id="79V-bZ-QHS"/>
+                            <constraint firstItem="vIl-Ao-9kW" firstAttribute="trailing" secondItem="ipC-OC-sCY" secondAttribute="trailing" id="BUv-tb-tzw"/>
+                            <constraint firstItem="gvK-R2-oPE" firstAttribute="top" secondItem="ipC-OC-sCY" secondAttribute="top" constant="10" id="TgC-24-fPz"/>
+                            <constraint firstItem="vIl-Ao-9kW" firstAttribute="bottom" secondItem="ipC-OC-sCY" secondAttribute="bottom" id="epT-1E-mBe"/>
+                            <constraint firstItem="vIl-Ao-9kW" firstAttribute="leading" secondItem="ipC-OC-sCY" secondAttribute="leading" id="hsW-nc-3bl"/>
+                            <constraint firstItem="vIl-Ao-9kW" firstAttribute="height" secondItem="7ap-JZ-PEw" secondAttribute="height" multiplier="0.85" id="igG-ko-Hqh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ipC-OC-sCY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9xh-uK-BFT"/>
+                    <connections>
+                        <outlet property="eventsCollectionView" destination="vIl-Ao-9kW" id="yaY-o1-T0I"/>
+                        <outlet property="mainView" destination="7ap-JZ-PEw" id="obn-cN-gnW"/>
+                        <outlet property="menuButton" destination="gvK-R2-oPE" id="t0C-M3-6Cq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsM-XR-Qoa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513.04347826086962" y="-28.532608695652176"/>
+        </scene>
+    </scenes>
+</document>
