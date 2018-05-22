@@ -27,7 +27,6 @@ final class EventsViewController: UIViewController {
     
     @IBOutlet var eventsCollectionView: EventsCollectionView!
     @IBOutlet var mainView: EventsMainView!
-    @IBOutlet weak var menuButton: UIButton!
     
     //---- Properties ----//
     // MARK: - Properties
@@ -99,9 +98,6 @@ final class EventsViewController: UIViewController {
         refreshControl.addTarget(self, action: #selector(reloadTimeline), for: .valueChanged)
         refreshControl.layer.zPosition = -1
         eventsCollectionView?.addSubview(refreshControl)
-        
-        // TODO: Move to main view
-        menuButton.roundEdges(cornerRadius: menuButton.frame.width / 2)
     }
     
     func removeReachabilityListener() {

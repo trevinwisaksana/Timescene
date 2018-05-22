@@ -174,7 +174,7 @@ final class EventsCollectionView: UICollectionView {
     func setCellInset(for section: Int) -> UIEdgeInsets {
         switch section {
         case 0:
-            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+            return UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
         case 1:
             return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         case 2:
