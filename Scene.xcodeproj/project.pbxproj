@@ -17,22 +17,8 @@
 		DD1805E920148F5F00FBA0B6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1805E820148F5F00FBA0B6 /* Constants.swift */; };
 		DD1805EF2014C9AB00FBA0B6 /* UICollectionView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1805EE2014C9AB00FBA0B6 /* UICollectionView+Utility.swift */; };
 		DD1805F22014CC3600FBA0B6 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1805F12014CC3600FBA0B6 /* EventCell.swift */; };
-		DD27C3FE204BB08A00AAB93F /* TSAppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C3FB204BB08800AAB93F /* TSAppReducer.swift */; };
-		DD27C407204BBF1C00AAB93F /* TSAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C406204BBF1C00AAB93F /* TSAppState.swift */; };
-		DD27C409204BBF6B00AAB93F /* TSAppStateEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C408204BBF6B00AAB93F /* TSAppStateEvents.swift */; };
-		DD27C40B204BC0E600AAB93F /* TSLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C40A204BC0E600AAB93F /* TSLoadingView.swift */; };
-		DD27C40D204BC29100AAB93F /* TSSettingsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C40C204BC29100AAB93F /* TSSettingsModule.swift */; };
-		DD27C410204BC54E00AAB93F /* TSEventsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C40F204BC54E00AAB93F /* TSEventsModule.swift */; };
-		DD27C412204BC59D00AAB93F /* TSEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C411204BC59D00AAB93F /* TSEvent.swift */; };
-		DD27C415204BC8B000AAB93F /* TSSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C414204BC8B000AAB93F /* TSSection.swift */; };
-		DD27C417204BD05400AAB93F /* TSEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C416204BD05400AAB93F /* TSEventsViewModel.swift */; };
-		DD27C419204BD14700AAB93F /* TSEventsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C418204BD14700AAB93F /* TSEventsDataSource.swift */; };
-		DD27C41B204BD3CC00AAB93F /* TSLoadEventsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C41A204BD3CC00AAB93F /* TSLoadEventsOperation.swift */; };
-		DD27C41E204BD48000AAB93F /* TSCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C41D204BD48000AAB93F /* TSCallbacks.swift */; };
-		DD27C420204BD6E900AAB93F /* TSTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C41F204BD6E900AAB93F /* TSTravel.swift */; };
+		DD27C40B204BC0E600AAB93F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C40A204BC0E600AAB93F /* LoadingView.swift */; };
 		DD27C422204BD8A600AAB93F /* TSEventsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C421204BD8A600AAB93F /* TSEventsAPI.swift */; };
-		DD27C426204BE3F400AAB93F /* TSEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C425204BE3F400AAB93F /* TSEventCell.swift */; };
-		DD27C428204CE4D900AAB93F /* TSEventAPIOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27C427204CE4D900AAB93F /* TSEventAPIOperation.swift */; };
 		DD33DF5F20418A7600D27B98 /* AppleMapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DF5E20418A7600D27B98 /* AppleMapService.swift */; };
 		DD33DF65204252EA00D27B98 /* MapOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD33DF64204252EA00D27B98 /* MapOptions.swift */; };
 		DD482EE6201C489000D046D0 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD482EE5201C489000D046D0 /* EventsViewModel.swift */; };
@@ -43,6 +29,7 @@
 		DD520A27203665950091AA9C /* WelcomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD520A26203665950091AA9C /* WelcomeCell.swift */; };
 		DD520A29203666180091AA9C /* InformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD520A28203666180091AA9C /* InformationCell.xib */; };
 		DD520A4E203912BC0091AA9C /* ForwardPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD520A4D203912BB0091AA9C /* ForwardPipe.swift */; };
+		DD8E8C8520B3B259003BF286 /* Callbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8E8C8420B3B259003BF286 /* Callbacks.swift */; };
 		DD8EDFF1203048AD004E11E0 /* NoEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EDFF0203048AD004E11E0 /* NoEventCell.swift */; };
 		DD91004220245AD2004CCC9E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91004120245AD2004CCC9E /* WelcomeViewController.swift */; };
 		DD91004420246893004CCC9E /* UIView+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD91004320246893004CCC9E /* UIView+Rounded.swift */; };
@@ -109,22 +96,8 @@
 		DD1805E820148F5F00FBA0B6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DD1805EE2014C9AB00FBA0B6 /* UICollectionView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Utility.swift"; sourceTree = "<group>"; };
 		DD1805F12014CC3600FBA0B6 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
-		DD27C3FB204BB08800AAB93F /* TSAppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSAppReducer.swift; sourceTree = "<group>"; };
-		DD27C406204BBF1C00AAB93F /* TSAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSAppState.swift; sourceTree = "<group>"; };
-		DD27C408204BBF6B00AAB93F /* TSAppStateEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSAppStateEvents.swift; sourceTree = "<group>"; };
-		DD27C40A204BC0E600AAB93F /* TSLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSLoadingView.swift; sourceTree = "<group>"; };
-		DD27C40C204BC29100AAB93F /* TSSettingsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSettingsModule.swift; sourceTree = "<group>"; };
-		DD27C40F204BC54E00AAB93F /* TSEventsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSEventsModule.swift; sourceTree = "<group>"; };
-		DD27C411204BC59D00AAB93F /* TSEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSEvent.swift; sourceTree = "<group>"; };
-		DD27C414204BC8B000AAB93F /* TSSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSSection.swift; sourceTree = "<group>"; };
-		DD27C416204BD05400AAB93F /* TSEventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSEventsViewModel.swift; sourceTree = "<group>"; };
-		DD27C418204BD14700AAB93F /* TSEventsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSEventsDataSource.swift; sourceTree = "<group>"; };
-		DD27C41A204BD3CC00AAB93F /* TSLoadEventsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSLoadEventsOperation.swift; sourceTree = "<group>"; };
-		DD27C41D204BD48000AAB93F /* TSCallbacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSCallbacks.swift; sourceTree = "<group>"; };
-		DD27C41F204BD6E900AAB93F /* TSTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSTravel.swift; sourceTree = "<group>"; };
+		DD27C40A204BC0E600AAB93F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		DD27C421204BD8A600AAB93F /* TSEventsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSEventsAPI.swift; sourceTree = "<group>"; };
-		DD27C425204BE3F400AAB93F /* TSEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSEventCell.swift; sourceTree = "<group>"; };
-		DD27C427204CE4D900AAB93F /* TSEventAPIOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSEventAPIOperation.swift; sourceTree = "<group>"; };
 		DD33DF5E20418A7600D27B98 /* AppleMapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapService.swift; sourceTree = "<group>"; };
 		DD33DF64204252EA00D27B98 /* MapOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOptions.swift; sourceTree = "<group>"; };
 		DD482EE5201C489000D046D0 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
@@ -136,6 +109,7 @@
 		DD520A28203666180091AA9C /* InformationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationCell.xib; sourceTree = "<group>"; };
 		DD520A2C20369EC60091AA9C /* Scene.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scene.entitlements; sourceTree = "<group>"; };
 		DD520A4D203912BB0091AA9C /* ForwardPipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardPipe.swift; sourceTree = "<group>"; };
+		DD8E8C8420B3B259003BF286 /* Callbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Callbacks.swift; sourceTree = "<group>"; };
 		DD8EDFF0203048AD004E11E0 /* NoEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoEventCell.swift; sourceTree = "<group>"; };
 		DD91004120245AD2004CCC9E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		DD91004320246893004CCC9E /* UIView+Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rounded.swift"; sourceTree = "<group>"; };
@@ -225,12 +199,7 @@
 			children = (
 				DD520A2C20369EC60091AA9C /* Scene.entitlements */,
 				DD1805D320148D6F00FBA0B6 /* AppDelegate.swift */,
-				DD27C400204BB08E00AAB93F /* Actions */,
-				DD27C401204BB09800AAB93F /* Reducers */,
-				DD27C402204BB0A700AAB93F /* States */,
-				DD27C41C204BD3D000AAB93F /* Operations */,
 				DDDE9B58201BFE4800623291 /* Models */,
-				DD27C40E204BC29600AAB93F /* Modules */,
 				DD1805EB2014B03E00FBA0B6 /* Controllers */,
 				DD1805F32014CC3900FBA0B6 /* Views */,
 				DD9872E42015CA5900DFE67D /* Services */,
@@ -300,7 +269,7 @@
 		DD1805F32014CC3900FBA0B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DD27C40A204BC0E600AAB93F /* TSLoadingView.swift */,
+				DD27C40A204BC0E600AAB93F /* LoadingView.swift */,
 				DD98A992202FE32400196CC6 /* EventsMainView.swift */,
 				DDC8DD8C2023F648001F600C /* EventsCollectionView.swift */,
 				DD98A997202FE62C00196CC6 /* Cells */,
@@ -308,59 +277,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		DD27C400204BB08E00AAB93F /* Actions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Actions;
-			sourceTree = "<group>";
-		};
-		DD27C401204BB09800AAB93F /* Reducers */ = {
-			isa = PBXGroup;
-			children = (
-				DD27C3FB204BB08800AAB93F /* TSAppReducer.swift */,
-			);
-			path = Reducers;
-			sourceTree = "<group>";
-		};
-		DD27C402204BB0A700AAB93F /* States */ = {
-			isa = PBXGroup;
-			children = (
-				DD27C406204BBF1C00AAB93F /* TSAppState.swift */,
-				DD27C408204BBF6B00AAB93F /* TSAppStateEvents.swift */,
-			);
-			path = States;
-			sourceTree = "<group>";
-		};
-		DD27C40E204BC29600AAB93F /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				DD27C40C204BC29100AAB93F /* TSSettingsModule.swift */,
-				DD27C40F204BC54E00AAB93F /* TSEventsModule.swift */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		DD27C413204BC7C800AAB93F /* Domain Object */ = {
-			isa = PBXGroup;
-			children = (
-				DD27C411204BC59D00AAB93F /* TSEvent.swift */,
-				DD27C41F204BD6E900AAB93F /* TSTravel.swift */,
-				DD27C414204BC8B000AAB93F /* TSSection.swift */,
-			);
-			path = "Domain Object";
-			sourceTree = "<group>";
-		};
-		DD27C41C204BD3D000AAB93F /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				DD27C41A204BD3CC00AAB93F /* TSLoadEventsOperation.swift */,
-				DD27C427204CE4D900AAB93F /* TSEventAPIOperation.swift */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
-		DD27C424204BDE5A00AAB93F /* Old Models */ = {
+		DD482EE7201C489400D046D0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				DD482EE5201C489000D046D0 /* EventsViewModel.swift */,
@@ -369,16 +286,6 @@
 				DDDE9B56201BFE4300623291 /* Travel.swift */,
 				DDDE9B5F201C315000623291 /* Event.swift */,
 				DDF2CF9B2042928800BE69B5 /* MapPin.swift */,
-			);
-			path = "Old Models";
-			sourceTree = "<group>";
-		};
-		DD482EE7201C489400D046D0 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				DD27C416204BD05400AAB93F /* TSEventsViewModel.swift */,
-				DD27C418204BD14700AAB93F /* TSEventsDataSource.swift */,
-				DD27C41D204BD48000AAB93F /* TSCallbacks.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -411,6 +318,7 @@
 				DDDE9B5A201C22AC00623291 /* EventHelper.swift */,
 				DD9872E12015CA5600DFE67D /* ReachabilityHelper.swift */,
 				DD1805E820148F5F00FBA0B6 /* Constants.swift */,
+				DD8E8C8420B3B259003BF286 /* Callbacks.swift */,
 			);
 			name = Helpers;
 			path = "New Group";
@@ -451,7 +359,6 @@
 				DD98A99E20302AA600196CC6 /* ErrorCell.swift */,
 				DD8EDFF0203048AD004E11E0 /* NoEventCell.swift */,
 				DDC59BB3204BAA5A0071A16D /* SidebarCell.swift */,
-				DD27C425204BE3F400AAB93F /* TSEventCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -469,8 +376,6 @@
 			isa = PBXGroup;
 			children = (
 				DD482EE7201C489400D046D0 /* ViewModels */,
-				DD27C424204BDE5A00AAB93F /* Old Models */,
-				DD27C413204BC7C800AAB93F /* Domain Object */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -647,18 +552,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD8E8C8520B3B259003BF286 /* Callbacks.swift in Sources */,
 				DD520A27203665950091AA9C /* WelcomeCell.swift in Sources */,
 				DD9872E32015CA5600DFE67D /* ReachabilityHelper.swift in Sources */,
 				DD91004220245AD2004CCC9E /* WelcomeViewController.swift in Sources */,
 				DD520A4E203912BC0091AA9C /* ForwardPipe.swift in Sources */,
-				DD27C40D204BC29100AAB93F /* TSSettingsModule.swift in Sources */,
 				DD482EF1201C628C00D046D0 /* GoogleCalendarService.swift in Sources */,
-				DD27C3FE204BB08A00AAB93F /* TSAppReducer.swift in Sources */,
 				DD98A991202FE1F900196CC6 /* EventsViewController.swift in Sources */,
 				DD0E4CB8202E8DE4006C85BF /* UIViewController+Alert.swift in Sources */,
-				DD27C419204BD14700AAB93F /* TSEventsDataSource.swift in Sources */,
 				DD973ED4202D85F800534024 /* Storyboard+Utility.swift in Sources */,
-				DD27C41B204BD3CC00AAB93F /* TSLoadEventsOperation.swift in Sources */,
 				DDCA52D1203546450052BD98 /* GMSMapView+Camera.swift in Sources */,
 				DD98A988202EDD2900196CC6 /* User.swift in Sources */,
 				DDC59BAC204B98480071A16D /* CenterViewControllerDelegate.swift in Sources */,
@@ -667,36 +569,27 @@
 				DDC59BB6204BAA9E0071A16D /* UITableView+Utility.swift in Sources */,
 				DDF648992027EE0B00A8ED5C /* MapHelper.swift in Sources */,
 				DD918564201DA5B8001A2403 /* TSRouter.swift in Sources */,
-				DD27C426204BE3F400AAB93F /* TSEventCell.swift in Sources */,
-				DD27C40B204BC0E600AAB93F /* TSLoadingView.swift in Sources */,
+				DD27C40B204BC0E600AAB93F /* LoadingView.swift in Sources */,
 				DDC8DD92202421D0001F600C /* Location.swift in Sources */,
 				DD98A993202FE32400196CC6 /* EventsMainView.swift in Sources */,
 				DDC59BA7204B97DA0071A16D /* ContainerViewController.swift in Sources */,
 				DDC59BB4204BAA5A0071A16D /* SidebarCell.swift in Sources */,
 				DDCBA03A202DC90600605AFB /* GoogleSignInCell.swift in Sources */,
 				DDC59BB0204B99200071A16D /* SidebarViewController.swift in Sources */,
-				DD27C428204CE4D900AAB93F /* TSEventAPIOperation.swift in Sources */,
-				DD27C410204BC54E00AAB93F /* TSEventsModule.swift in Sources */,
-				DD27C417204BD05400AAB93F /* TSEventsViewModel.swift in Sources */,
 				DD1805DC20148D6F00FBA0B6 /* Scene.xcdatamodeld in Sources */,
-				DD27C415204BC8B000AAB93F /* TSSection.swift in Sources */,
 				DD91004420246893004CCC9E /* UIView+Rounded.swift in Sources */,
 				DDF6489E202942DA00A8ED5C /* InformationCell.swift in Sources */,
 				DD482EEF201C5D0600D046D0 /* RefreshControl+AddTarget.swift in Sources */,
-				DD27C407204BBF1C00AAB93F /* TSAppState.swift in Sources */,
 				DD918568201DADA7001A2403 /* LocationHelper.swift in Sources */,
 				DD1805D420148D6F00FBA0B6 /* AppDelegate.swift in Sources */,
 				DDDE9B60201C315000623291 /* Event.swift in Sources */,
 				DDDE9B57201BFE4400623291 /* Travel.swift in Sources */,
 				DD98A98F202FCE4E00196CC6 /* UserCell.swift in Sources */,
-				DD27C412204BC59D00AAB93F /* TSEvent.swift in Sources */,
 				DDDE9B5B201C22AC00623291 /* EventHelper.swift in Sources */,
 				DD8EDFF1203048AD004E11E0 /* NoEventCell.swift in Sources */,
-				DD27C41E204BD48000AAB93F /* TSCallbacks.swift in Sources */,
 				DD1805EF2014C9AB00FBA0B6 /* UICollectionView+Utility.swift in Sources */,
 				DD27C422204BD8A600AAB93F /* TSEventsAPI.swift in Sources */,
 				DDF2CF9C2042928800BE69B5 /* MapPin.swift in Sources */,
-				DD27C420204BD6E900AAB93F /* TSTravel.swift in Sources */,
 				DDB94B29201C44A100B77A33 /* Date+String.swift in Sources */,
 				DD482EF3201C62D300D046D0 /* GoogleMapService.swift in Sources */,
 				DDF2CF9A2042876500BE69B5 /* MapView+Camera.swift in Sources */,
@@ -704,7 +597,6 @@
 				DD1805F22014CC3600FBA0B6 /* EventCell.swift in Sources */,
 				DD1805E920148F5F00FBA0B6 /* Constants.swift in Sources */,
 				DDC59BA9204B98300071A16D /* SidePanelViewControllerDelegate.swift in Sources */,
-				DD27C409204BBF6B00AAB93F /* TSAppStateEvents.swift in Sources */,
 				DDC8DD8D2023F648001F600C /* EventsCollectionView.swift in Sources */,
 				DD33DF5F20418A7600D27B98 /* AppleMapService.swift in Sources */,
 			);

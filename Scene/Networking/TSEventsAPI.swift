@@ -10,18 +10,17 @@ import Foundation
 import GoogleAPIClientForREST
 import GoogleSignIn
 
-final class TSEventAPI {
-    static let sharedInstance = TSEventAPI()
+final class EventAPI {
     
     private let googleCalendarService = GTLRCalendarService()
     
     fileprivate(set) var isThereOngoingRequest = false
     
-    func getEvents(_ completion: @escaping TSAPIEventCompletion) {
+    func getEvents(_ completion: @escaping APIEventCompletion) {
         getEvents(retries: 10, completion)
     }
     
-    fileprivate func getEvents(retries: Int, _ completion: @escaping TSAPIEventCompletion) {
+    fileprivate func getEvents(retries: Int, _ completion: @escaping APIEventCompletion) {
         
         isThereOngoingRequest = true
         
@@ -41,15 +40,15 @@ final class TSEventAPI {
             
             if let error = error {
                 self.isThereOngoingRequest = false
-                completion([TSEvent](), error)
+                completion([Event](), error)
             }
             
             guard let calendarEvents = (response as! GTLRCalendar_Events).items else {
                 return
             }
             
-            let events = calendarEvents.flatMap { (event) in
-                return TSEvent(googleEvent: event)
+            let events = calendarEvents.compactMap { (event) in
+                return Event(googleEvent: event)
             }
             
             self.isThereOngoingRequest = false

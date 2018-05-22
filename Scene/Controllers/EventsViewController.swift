@@ -33,7 +33,6 @@ final class EventsViewController: UIViewController {
     // MARK: - Properties
     
     let viewModel = EventsViewModel()
-    fileprivate var source = TSEventsDataSource(store: mainStore)
     private let reachabiltyHelper = ReachabilityHelper()
     
     private let refreshControl = UIRefreshControl()
@@ -47,7 +46,15 @@ final class EventsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         configure()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+
     }
   
     override func viewDidDisappear(_ animated: Bool) {
@@ -64,8 +71,6 @@ final class EventsViewController: UIViewController {
     //---- View Controller Configuration ----//
     
     private func configure() {
-        
-        source.delegate = self
         
         //---- Sign In silently ----//
         configureGoogleSignIn()
@@ -122,6 +127,8 @@ extension EventsViewController: UICollectionViewDelegate, UICollectionViewDataSo
         // Used to check if a user exists
         let defaults = UserDefaults.standard
         let currentUser = defaults.object(forKey: Constants.UserDefaults.currentUser)
+        
+        // return source.numberOfRows()
         
         switch section {
         // If user has logged in before, remove the cell in the other sections
@@ -367,14 +374,6 @@ extension EventsViewController: UICollectionViewDelegateFlowLayout {
        
 }
 
-// MARK: - TSEventsDataSource
-extension EventsViewController: TSEventsDataSourceDelegate {
-    
-    func contentChanged() {
-        
-    }
-    
-}
 
 // MARK: - GMSMapViewDelegate
 extension EventsViewController: GMSMapViewDelegate { }

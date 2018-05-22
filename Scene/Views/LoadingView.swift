@@ -12,7 +12,7 @@ enum LoadingState {
     case loading, error, empty, idle
 }
 
-class LoadingView: UIView {
+class TSLoadingView: UIView {
     
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var loadingLabel: UILabel!

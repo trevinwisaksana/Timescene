@@ -13,10 +13,7 @@ import SwiftLocation
 import Firebase
 import GoogleSignIn
 import GoogleAPIClientForREST
-import ReSwift
 
-// The global application store, which is responsible for managing the appliction state.
-let mainStore = Store<TSAppState>(reducer: TSAppReducer, state: nil)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
